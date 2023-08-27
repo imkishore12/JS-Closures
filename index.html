@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Array of objects</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <h2>Quesion 1: <br> "    function counter(){ <br>
+        var counter = 0; <br>
+    
+        function IncreaseCounter() {<br>
+            return counter += 1;<br>
+        };<br>
+    
+        return IncreaseCounter;<br>
+    } <br>
+    
+    var counter = counter(); <br>
+    alert(counter()); <br>
+    alert(counter()); <br>
+    alert(counter());<br>
+    alert(counter());"<br></h2>
+            
+            <img src="images/q1.png" alt="">
+            <hr>
+    <h2> Quesion 2: <br>  "let count = 0; <br>
+        (function () { <br>
+          if (count === 0) { <br>
+            let count = 1; <br>
+            console.log(count); // What is logged? <br>
+          }
+          console.log(count); // What is logged? <br>
+        })();"<br>
+<br>
+</h2>
+            <img src="images/q2.png" alt="">
+            <img src="images/o2.png" alt="" id="show2" class="img">
+            <hr>
+    <h2>Question 3: <br> "for (var i = 0; i < 3; i++) { <br>
+        setTimeout(function log() {  <br>
+          console.log(i); // What is logged? <br>
+        }, 1000);<br>
+      }"<br></h2>
+    <img src="images/q3.png" alt="">
+    <img src="images/o3.png" alt="" id="show3" class="img">
+    <hr>
+    <h2>Quesion 4:Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.<br></h2>
+    <img src="images/q4.png" alt="">
+    <img src="images/o4.png" alt="" id="show4" class="img">
+    <hr>
+    <h2>Quesion 5:Take a variable in outer function and create an inner function to increase the counter every time it is called</h2><br>
+    <img src="images/q5.png" alt="">
+    <hr>
+    <h2>Quesion 6: <br> "Print Output <br>
+
+        var a = 12; <br> 
+        (function () { <br>
+          alert(a); <br>
+        })();" <br></h2>
+    <img src="images/q6.png" alt="">
+    <hr>
+    <h2>Question 7: <br>
+        "var a = 10; <br>
+var x = (function () { <br>
+  var a = 12; <br>
+  return function () { <br>
+    alert(a); <br>
+  }; <br>
+})(); <br>
+x();" <br>
+    </h2>
+    <img src="images/q7.png" alt="">
+<hr>
+    <br>
+    <hr>
+    <h2>Question 8: <br>"var globalVar = ""xyz""; <br>
+
+        (function outerFunc(outerArg) { <br>
+            var outerVar = 'a';
+            
+            (function innerFunc(innerArg) { <br>
+            var innerVar = 'b';<br>
+            <br>
+            console.log(<br>
+                ""outerArg = "" + outerArg + ""\n"" + <br>
+                ""innerArg = "" + innerArg + ""\n"" +<br>
+                ""outerVar = "" + outerVar + ""\n"" +<br>
+                ""innerVar = "" + innerVar + ""\n"" +<br>
+                ""globalVar = "" + globalVar);<br>
+            
+            })(456);<br>
+        })(123);"<br></h2>
+    <img src="images/q8.png" alt="">
+    <hr>
+    <script src="script.js"></script>
+    <hr>
